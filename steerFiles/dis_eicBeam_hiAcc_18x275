@@ -1,0 +1,79 @@
+/*
+Steering file for LO DIS with realistic EIC beam parameters
+18x275 in High Acceptance Mode
+See CDR Table 3.4
+*/
+
+Main:numberOfEvents = 5000
+
+
+/*
+Beam Parameters
+*/
+
+Beams:frameType = 2
+Beams:idA = 2212
+Beams:idB = 2212
+
+Beams:eA = 275
+Beams:eB = 0
+
+Beams:allowMomentumSpread = on
+Beams:sigmapxA = 0.000065
+Beams:sigmapyA = 0.000065
+Beams:sigmapzA = 0.00068
+
+Beams:sigmapxB = 0.000089
+Beams:sigmapyB = 0.000082
+Beams:sigmapzB = 0.00109
+
+Beams:allowVertexSpread = on
+Beams:sigmaVertexX = 0.192
+Beams:sigmaVertexY = 0.017
+Beams:sigmaVertexZ = 0.0
+
+
+/*
+PDF Selection 2 = CTEQ5L
+PDF:GammaHardSet needed to try SAS Photon set, LHAPDF5 isn't linked yet ...
+PDF:extrapolate = on allow extrapolations to low x 
+*/
+PDF:pset = 2
+
+
+/*
+Subprocess Selection
+*/
+SoftQCD:all = on
+
+
+
+
+
+/*
+PhaseSpace Settings
+*/
+
+PhaseSpace:pTHatMin = 1.0
+PhaseSpace:pTHatMinDiverge = 0.5
+
+
+/*
+Hadronization and Radiation Settings
+*/
+
+/*
+Display Settings
+*/
+Init:showProcesses = off
+Init:showChangedSettings = off
+Init:showMultipartonInteractions = off
+Init:showChangedParticleData = off
+
+Next:numberShowInfo = 0
+Next:numberShowProcess = 0
+Next:numberShowEvent = 0
+Next:numberCount = 10000
+
+Random:setSeed = on
+Random:seed = 0
