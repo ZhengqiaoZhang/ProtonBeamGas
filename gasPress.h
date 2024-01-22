@@ -95,7 +95,7 @@ if(rnd3->Rndm()*gasMax<gas_pressure1(s))s1=s;
 }
 
 
-return -1.0*s1;
+return -1.0*s1;//qiao test
 
 }
 

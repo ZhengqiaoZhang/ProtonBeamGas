@@ -296,7 +296,7 @@ double t2;// = - ( a*px + b*py + c*pz + d ) / tDenom;
 			
 				if(particle_in_main==1.0){
 				particlerate_maindet_vsZ->Fill(vertex_z);
-				if(vertex_z<-5000.0)cout<<vertex_z<<endl;
+				//if(vertex_z<-5000.0)cout<<vertex_z<<endl;
 				}
 				 if(particle_in_main==1.0){
 				partPtHist_d->Fill(partPt);

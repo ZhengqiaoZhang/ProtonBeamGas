@@ -1,0 +1,6 @@
+TO run:
+
+source /gpfs/mnt/gpfs02/eic/zhangzq/config_py8.csh
+make
+
+./runBeamGasHepMC.exe ./steerFiles/eic_ProtonBeamGas_100GeV 2 100 10 -0.025 out.hist.root output.hepmc
